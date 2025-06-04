@@ -1,0 +1,13 @@
+conda create -n u_swift python==3.12
+conda activate u_swift
+
+cd ms-swift
+pip install -e .
+
+
+
+
+use other's environment:
+source /home/yuansheng/miniconda3/bin/activate /home/yuansheng/miniconda3/envs/swift-qwen3
+
+
