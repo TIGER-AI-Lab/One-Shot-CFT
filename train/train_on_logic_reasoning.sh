@@ -4,7 +4,7 @@ set -x
 
 MODEL_PATH="../../models/Qwen2.5-Math-7B"
 
-DATA_PATH="../data/BBEH-CFT-CausalUnderstanding-p0.jsonl"
+DATA_PATH="../data/BBEH-CFT-TimeArithmetic-p0.jsonl"
 
 OUTPUT_DIR="../output_models_logic/"
 
@@ -50,7 +50,7 @@ torchrun \
     --num_train_epochs 50 \
     --gradient_accumulation_steps 64 \
     --save_strategy "epoch" \
-    --save_steps 2 \
+    --save_steps 5 \
     --save_only_model True \
     --warmup_ratio 0.05 \
     --ddp_backend "nccl" \
