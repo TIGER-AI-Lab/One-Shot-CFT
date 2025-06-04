@@ -11,6 +11,7 @@ mkdir -p $OUTPUT_DIR
 cd ../../eval/Math_Reasoning_Evaluation
 
 DATA_NAME="math-500-validation"
+
 TOKENIZERS_PARALLELISM=false \
 python3 -u math_eval.py \
     --model_name_or_path ${MODEL_NAME_OR_PATH} \
@@ -22,10 +23,11 @@ python3 -u math_eval.py \
     --num_test_sample ${NUM_TEST_SAMPLE} \
     --seed 0 \
     --temperature 0 \
+    --max_tokens_per_call 4096 \
     --n_sampling 1 \
     --top_p 1 \
     --start 0 \
     --end -1 \
     --use_vllm \
     --save_outputs \
-    # --overwrite \
+
