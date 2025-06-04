@@ -64,8 +64,8 @@ We do not use a separate validation set for logic tasks. Based on our experiment
 ## Evaluation
 
 Edit the following scripts with your trained model path and output directory:
-	•	eval/eval_on_math_reasoning.sh
-	•	eval/eval_on_logic_reasoning.sh
+* eval/eval_on_math_reasoning.sh
+* l/eval_on_logic_reasoning.sh
 
 Then run:
 
@@ -79,9 +79,9 @@ Our evaluation code is based on [Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5
 
 ## Create Your Own Critique Data
 
-You can create new critique data using the prompt templates in prompts/ for:
-	•	Candidate solution generation
-	•	Teacher critique generation
+You can create new critique data using the prompt templates in "prompts/" for:
+* Candidate solution generation
+* Teacher critique generation
 
 
 ## Citation
