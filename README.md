@@ -58,7 +58,35 @@ bash start_validate.sh
 ```
 This will create a validation_summary.txt file containing MATH-Validation scores for each checkpoint. Select the checkpoint with the highest score as your final model.
 
-### Evaluation
+## Evaluation
 
+Fill in the model path and evaluation result save path in eval/eval_on_math_reasoning.sh and eval/eval_on_logic_reasoning.sh, then run:
+```bash
+cd eval/
+bash eval_on_math_reasoning.sh
+bash eval_on_logic_reasoning.sh
+```
+Hardware may have a slight impact on evaluation results based on our testing. To fully reproduce our results, we recommend testing on A100 GPU with CUDA 12.4 and vllm>=0.8.5. 
+
+Note: Our evaluation code is modified from [Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5-Math) and [BBEH](https://github.com/google-deepmind/bbeh).
+
+## Construct Critique Data
+
+To create your own critique data, you can use our data generation prompts during candidate solutions generation and teacher critique generation in "prompts/"
+
+## Citation
+
+Cite our paper as
+```
+@misc{wang2025critiquefinetuninglearningcritique,
+      title={Critique Fine-Tuning: Learning to Critique is More Effective than Learning to Imitate},
+      author={Yubo Wang and Xiang Yue and Wenhu Chen},
+      year={2025},
+      eprint={2501.17703},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2501.17703},
+}
+```
 
 

@@ -359,7 +359,12 @@ def convert_to_decimal(text):
 
     def scientific_to_decimal(base, exponent):
         """将科学计数法转换为小数"""
-        return float(base) * (10 ** exponent)
+        try:
+            s = float(base) * (10 ** exponent)
+        except Exception as e:
+            s = 0
+            print("exception in grader", e)
+        return s
 
     # 如果是科学计数法格式 (1e-3)
     if 'e' in str(text).lower():
