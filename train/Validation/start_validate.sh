@@ -3,7 +3,7 @@ set -ex
 
 export CUDA_VISIBLE_DEVICES=4,5
 
-model_dir="/map-vepfs/yubo/One-Shot-CFT/output_models_math_0604_0/v1-20250604-185543"
+models_dir="/map-vepfs/yubo/One-Shot-CFT/output_models_math_0604_0/v1-20250604-185543"
 summary_path="../../Validation/validation_summary.txt"
 
 models_dir_name=$(basename "$models_dir")
