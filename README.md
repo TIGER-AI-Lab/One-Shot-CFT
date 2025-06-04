@@ -74,8 +74,6 @@ cd eval/
 bash eval_on_math_reasoning.sh
 bash eval_on_logic_reasoning.sh
 ```
-⚠️ Reproducibility Tip:
-For consistent results, we recommend using A100 GPUs, CUDA 12.4, and vllm >= 0.8.5.
 
 Our evaluation code is based on [Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5-Math) and [BBEH](https://github.com/google-deepmind/bbeh).
 
