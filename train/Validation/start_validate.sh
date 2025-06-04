@@ -24,3 +24,4 @@ for checkpoint_dir in ${models_dir}/checkpoint-*; do
             bash validate_single.sh "$checkpoint_dir" "$output_dir" "$summary_path"
         else
             echo "Skipping checkpoint-${checkpoint_num} as it's >= 100"
+done
