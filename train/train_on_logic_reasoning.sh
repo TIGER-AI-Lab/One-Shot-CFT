@@ -6,7 +6,7 @@ MODEL_PATH="../../models/Qwen2.5-Math-7B"
 
 DATA_PATH="../data/BBEH-CFT-CausalUnderstanding-p0.jsonl"
 
-OUTPUT_DIR="../output_models/"
+OUTPUT_DIR="../output_models_logic/"
 
 if [ ! -d "$OUTPUT_DIR" ]; then
   mkdir -p "$OUTPUT_DIR"

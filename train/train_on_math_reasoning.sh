@@ -6,7 +6,7 @@ MODEL_PATH="../../models/Qwen2.5-Math-7B"
 
 DATA_PATH="../data/DSR-CFT-p0.jsonl"
 
-OUTPUT_DIR="../output_models/"
+OUTPUT_DIR="../output_models_math/"
 
 if [ ! -d "$OUTPUT_DIR" ]; then
   mkdir -p "$OUTPUT_DIR"
