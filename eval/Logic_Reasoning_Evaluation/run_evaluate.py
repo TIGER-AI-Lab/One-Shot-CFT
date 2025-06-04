@@ -23,6 +23,8 @@ def main():
     parser.add_argument("--enable_result", default=True, type=str)
 
     args = parser.parse_args()
+    os.makedirs(args.output_dir_path, exist_ok=True)
+    os.makedirs(os.path.dirname(args.summary_path), exist_ok=True)
 
     llm, sampling_params = load_vllm_model(args)
     tasks = load_tasks(args.sub_task_list)
