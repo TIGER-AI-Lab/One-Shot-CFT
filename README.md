@@ -88,14 +88,11 @@ You can create new critique data using the prompt templates in prompts/ for:
 
 Cite our paper as
 ```
-@misc{wang2025critiquefinetuninglearningcritique,
-      title={Critique Fine-Tuning: Learning to Critique is More Effective than Learning to Imitate},
-      author={Yubo Wang and Xiang Yue and Wenhu Chen},
-      year={2025},
-      eprint={2501.17703},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2501.17703},
+@article{wang2025critique,
+  title={Critique fine-tuning: Learning to critique is more effective than learning to imitate},
+  author={Wang, Yubo and Yue, Xiang and Chen, Wenhu},
+  journal={arXiv preprint arXiv:2501.17703},
+  year={2025}
 }
 ```
 
