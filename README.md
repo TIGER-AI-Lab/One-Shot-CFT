@@ -37,42 +37,54 @@ bash setup_env.sh
 bash prepare_data.sh
 ```
 
-### Training Steps
+### Training
 
-To train models on Mathematical Reasoning tasks:
+1. Train on Mathematical Reasoning
 ```bash
 cd ../train/
 bash train_on_math_reasoning.sh
 ```
 
-On Logic Reasoning tasks:
-```bash
-cd ../train/
-bash train_on_logic_reasoning.sh
-```
-
-Note: In our paper experiments, we randomly select 500 math problems from the MATH dataset (excluding those in the MATH-500 benchmark) to construct the validation set. After training is complete, run the following commands to generate validation scores:
+We randomly select 500 math problems (excluding MATH-500) for validation.
+To validate after training:
 ```bash
 cd train/Validation
 bash start_validate.sh
 ```
-This will create a validation_summary.txt file containing MATH-Validation scores for each checkpoint. Select the checkpoint with the highest score as your final model.
+This generates validation_summary.txt containing MATH-Validation scores per checkpoint. Select the checkpoint with the highest score as your final model.
+
+
+2. Train on Logic Reasoning
+```bash
+cd ../train/
+bash train_on_logic_reasoning.sh
+```
+We do not use a separate validation set for logic tasks. Based on our experiments, checkpoints between ckpt-30 and ckpt-40 generally yield the best performance.
 
 ## Evaluation
 
-Fill in the model path and evaluation result save path in eval/eval_on_math_reasoning.sh and eval/eval_on_logic_reasoning.sh, then run:
+Edit the following scripts with your trained model path and output directory:
+	•	eval/eval_on_math_reasoning.sh
+	•	eval/eval_on_logic_reasoning.sh
+
+Then run:
+
 ```bash
 cd eval/
 bash eval_on_math_reasoning.sh
 bash eval_on_logic_reasoning.sh
 ```
-Hardware may have a slight impact on evaluation results based on our testing. To fully reproduce our results, we recommend testing on A100 GPU with CUDA 12.4 and vllm>=0.8.5. 
+⚠️ Reproducibility Tip:
+For consistent results, we recommend using A100 GPUs, CUDA 12.4, and vllm >= 0.8.5.
 
-Note: Our evaluation code is modified from [Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5-Math) and [BBEH](https://github.com/google-deepmind/bbeh).
+Our evaluation code is based on [Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5-Math) and [BBEH](https://github.com/google-deepmind/bbeh).
 
-## Construct Critique Data
+## Create Your Own Critique Data
 
-To create your own critique data, you can use our data generation prompts during candidate solutions generation and teacher critique generation in "prompts/"
+You can create new critique data using the prompt templates in prompts/ for:
+	•	Candidate solution generation
+	•	Teacher critique generation
+
 
 ## Citation
 
