@@ -65,7 +65,7 @@ We do not use a separate validation set for logic tasks. Based on our experiment
 
 Edit the following scripts with your trained model path and output directory:
 * eval/eval_on_math_reasoning.sh
-* l/eval_on_logic_reasoning.sh
+* eval/eval_on_logic_reasoning.sh
 
 Then run:
 
