@@ -5,7 +5,7 @@ This repo contains the code for [Unleashing the Reasoning Potential of Pre-train
 
 <a target="_blank" href="https://github.com/TIGER-AI-Lab/One-Shot-CFT">
 <img style="height:22pt" src="https://img.shields.io/badge/-Code-black?style=flat&logo=github"></a>
-<a target="_blank" href="https://arxiv.org/abs/">
+<a target="_blank" href="https://arxiv.org/pdf/2506.03295">
 <img style="height:22pt" src="https://img.shields.io/badge/-Paper-green?style=flat&logo=arxiv"></a>
 <a target="_blank" href="https://tiger-ai-lab.github.io/One-Shot-CFT">
 <img style="height:22pt" src="https://img.shields.io/badge/-🌐%20Website-red?style=flat"></a>
@@ -88,10 +88,10 @@ You can create new critique data using the prompt templates in "prompts/" for:
 
 Cite our paper as
 ```
-@article{wang2025critique,
-  title={Critique fine-tuning: Learning to critique is more effective than learning to imitate},
-  author={Wang, Yubo and Yue, Xiang and Chen, Wenhu},
-  journal={arXiv preprint arXiv:2501.17703},
+@article{wang2025unleashing,
+  title={Unleashing the Reasoning Potential of Pre-trained LLMs by Critique Fine-Tuning on One Problem},
+  author={Wang, Yubo and Nie, Ping and Zou, Kai and Wu, Lijun and Chen, Wenhu},
+  journal={arXiv preprint arXiv:2506.03295},
   year={2025}
 }
 ```
