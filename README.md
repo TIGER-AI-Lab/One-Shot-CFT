@@ -1,6 +1,6 @@
 # One-Shot-CFT
 
-This repo contains the code for [Unleashing the Reasoning Potential of Pre-trained LLMs by Critique Fine-Tuning on One Problem](https://arxiv.org/abs/). One-Shot Critique Fine-Tuning (CFT) is a simple, robust, and compute-efficient training paradigm for unleashing the reasoning capabilities of pretrained LLMs in both mathematical and logical domains. By leveraging critiques on just one problem, One-Shot CFT enables models like Qwen and LLaMA to match or even outperform reinforcement learning, while using 20× less compute.
+This repo contains the code for [Unleashing the Reasoning Potential of Pre-trained LLMs by Critique Fine-Tuning on One Problem](https://arxiv.org/pdf/2506.03295). One-Shot Critique Fine-Tuning (CFT) is a simple, robust, and compute-efficient training paradigm for unleashing the reasoning capabilities of pretrained LLMs in both mathematical and logical domains. By leveraging critiques on just one problem, One-Shot CFT enables models like Qwen and LLaMA to match or even outperform reinforcement learning, while using 20× less compute.
 
 
 <a target="_blank" href="https://github.com/TIGER-AI-Lab/One-Shot-CFT">
